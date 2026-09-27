@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>WESTINDUSTRY — Dukung Venue</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="glow"></div>
+
+<main class="wrap">
+
+  <header class="hero">
+    <div class="hero-badge" id="loginBadge">
+      <button id="loginBtn" class="btn-roblox">Login dengan Roblox</button>
+    </div>
+
+    <div class="avatar-ring">
+      <div class="avatar-inner">W</div>
+    </div>
+
+    <h1 class="creator-name" id="creatorName">WESTINDUSTRY</h1>
+    <p class="creator-tagline" id="creatorTagline">LA'PARTY STUDIO — DJ &amp; Music Venue Experience</p>
+  </header>
+
+  <section class="panel donate-panel">
+    <h2 class="panel-title">Kirim Dukungan</h2>
+    <p class="panel-sub">Donasi kamu tampil di papan donasi in-game — sekaligus memicu efek visual sesuai jumlahnya.</p>
+
+    <form id="donateForm" class="donate-form">
+      <div class="amount-row" id="amountPresets">
+        <button type="button" class="chip" data-amount="500">500</button>
+        <button type="button" class="chip" data-amount="1000">1.000</button>
+        <button type="button" class="chip" data-amount="1800">1.800</button>
+        <button type="button" class="chip" data-amount="5000">5.000</button>
+      </div>
+
+      <label class="field">
+        <span>Jumlah</span>
+        <input type="number" id="amountInput" min="1" placeholder="Masukkan jumlah" required />
+      </label>
+
+      <label class="field">
+        <span>Pesan (opsional)</span>
+        <textarea id="messageInput" maxlength="255" placeholder="Tulis pesan buat DJ..."></textarea>
+        <span class="char-count"><span id="charCount">0</span>/255</span>
+      </label>
+
+      <button type="submit" class="btn-primary">Kirim Donasi</button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </section>
+
+  <section class="panel feed-panel">
+    <h2 class="panel-title">Donasi Terbaru</h2>
+    <ul class="feed-list" id="feedList">
+      <li class="feed-empty">Belum ada donasi. Jadi yang pertama.</li>
+    </ul>
+  </section>
+
+  <footer class="foot">
+    <span>WESTINDUSTRY / LA'PARTY STUDIO</span>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
